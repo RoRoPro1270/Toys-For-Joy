@@ -486,6 +486,15 @@ $pattern-background-size: 25em;
 				}
 			}
 
+			&.fa-instagram {
+				background: _palette(instagram, bg);
+				color: _palette(instagram, fg);
+
+				&:hover {
+					background: lighten(_palette(instagram, bg), 4);
+				}
+			}
+
 			&.fa-facebook-f {
 				background: _palette(facebook, bg);
 				color: _palette(facebook, fg);

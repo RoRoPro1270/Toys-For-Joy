@@ -10,6 +10,7 @@
 	<title>No Sidebar - Twenty by HTML5 UP</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
@@ -21,30 +22,18 @@
 
 		<!-- Header -->
 		<header id="header">
-			<h1 id="logo"><a href="index.html">Twenty <span>by HTML5 UP</span></a></h1>
+			<h1 id="logo"><a href="index.html">Toys for Joy</span></a></h1>
 			<nav id="nav">
 				<ul>
 					<li class="current"><a href="index.html">Welcome</a></li>
 					<li class="submenu">
 						<a href="#">Layouts</a>
 						<ul>
-							<li><a href="left-sidebar.html">Left Sidebar</a></li>
-							<li><a href="right-sidebar.html">Right Sidebar</a></li>
 							<li><a href="no-sidebar.html">No Sidebar</a></li>
 							<li><a href="contact.html">Contact</a></li>
-							<li class="submenu">
-								<a href="#">Submenu</a>
-								<ul>
-									<li><a href="#">Dolore Sed</a></li>
-									<li><a href="#">Consequat</a></li>
-									<li><a href="#">Lorem Magna</a></li>
-									<li><a href="#">Sed Magna</a></li>
-									<li><a href="#">Ipsum Nisl</a></li>
-								</ul>
-							</li>
 						</ul>
 					</li>
-					<li><a href="#" class="button primary">Sign Up</a></li>
+					<!-- <li><a href="#" class="button primary">Sign Up</a></li> -->
 				</ul>
 			</nav>
 		</header>
@@ -64,32 +53,78 @@
 				<!-- Content -->
 				<div class="content">
 					<section>
-						<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+						<section id="carousel">
+							<div id="myCarousel" class="carousel slide" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel" data-slide-to="1"></li>
+									<li data-target="#myCarousel" data-slide-to="2"></li>
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">
+									<div class="item active">
+										<a href="#" class="image featured-image">
+											<img src="images/pic01_01.jpg" alt="Event 1" class="small-image">
+										</a>
+										<div class="carousel-caption">
+											<h3>Event 1</h3>
+											<p>Description for Event 1</p>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="#" class="image featured-image">
+											<img src="images/pic01_02.jpg" alt="Event 2" class="small-image">
+										</a>
+										<div class="carousel-caption">
+											<h3>Event 2</h3>
+											<p>Description for Event 2</p>
+										</div>
+									</div>
+
+									<div class="item">
+										<a href="#" class="image featured-image">
+											<img src="images/pic01_03.jpg" alt="Event 3" class="small-image">
+										</a>
+										<div class="carousel-caption">
+											<h3>Event 3</h3>
+											<p>Description for Event 3</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Left and right controls -->
+								<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</section>
+
 						<header>
-							<h3>Dolore Amet Consequat</h3>
+							<h3>House of Love - Block Party</h3>
 						</header>
-						<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo,
-							tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam
-							quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum.
-							Morbi mattis elementum orci, nec dictum massa. Morbi eu faucibus massa. Aliquam massa urna,
-							imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros
-							ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
-						<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt
-							pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque
-							ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam
-							eget lobortis purus. Phasellus vitae tortor non est placerat tristique. Sed id sem et massa
-							ornare pellentesque. Maecenas pharetra porta accumsan. </p>
-						<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus.
-							Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in
-							laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non
-							hendrerit ipsum arcu tristique est.</p>
+						<p>Had an amazing time last weekend at our first event helping out at the House of Love
+							youth home's block party! We loved
+							being part of the fun and are so grateful for the opportunity to give back. Our 3D
+							printed toys were a big hit with the
+							kids! Huge thanks to everyone who donated and supported us—your generosity made this all
+							possible!</p>
 					</section>
 				</div>
 
 			</section>
 
+			<!-- TODO: -->
+
 			<!-- Two -->
-			<section class="wrapper style1 container special">
+			<!-- <section class="wrapper style1 container special">
 				<div class="row">
 					<div class="col-4 col-12-narrower">
 
@@ -140,28 +175,30 @@
 
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 		</article>
 
 		<!-- Footer -->
 		<footer id="footer">
-
 			<ul class="icons">
-				<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li>
-				<li><a href="#" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
-				<li><a href="#" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+				<!--  -->
+				<li><a href="https://www.instagram.com/toys.forjoy?igsh=cjg2c2g4Nm5xOXF6 "
+						class="icon brands circle fa-instagram"><span class="label">Instagram</span></a></li>
+				<!-- <li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li> -->
 			</ul>
-
-
-
 		</footer>
 
 	</div>
 
 	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
