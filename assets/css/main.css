@@ -3617,3 +3617,44 @@ body.index #main {
 	margin: 0 auto;
 	display: block;
 }
+
+.activity-item {
+	margin: 1em 0;
+	padding: 1em;
+	width: 100%;
+	height: auto;
+	display: block;
+	border: 2px solid transparent;
+	border-color: rgba(128, 128, 128, 0.5);
+	transition: transform 0.3s ease, border-color 0.3s ease;
+	cursor: pointer;
+}
+
+.activity-item:hover {
+	border-color: #645862;
+	/* Highlight border color */
+	transform: scale(1.02);
+	/* Pop-out effect */
+}
+
+a.activity-item {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
+a.activity-item:hover {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
+.carousel-control {
+	opacity: 0.4;
+}
+
+.carousel-control.left {
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .1) 0, rgba(0, 0, 0, .0001) 100%);
+}
+
+.carousel-control.right {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, .0001) 100%);
+}
