@@ -2078,6 +2078,15 @@ input[type="email"] {
 	background: #7fb7d2;
 }
 
+.icon.circle.fa-sun {
+	background: #70aecd;
+	color: #fff;
+}
+
+.icon.circle.fa-sun:hover {
+	background: #7fb7d2;
+}
+
 .icon.circle.fa-facebook-f {
 	background: #7490c3;
 	color: #fff;
@@ -2347,7 +2356,8 @@ button.small,
 }
 
 .wrapper.style2 {
-	background-color: #f48ca5; /* light red-pink */
+	background-color: #f48ca5;
+	/* light red-pink */
 	background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 	background-position: bottom left, bottom right;
 	background-repeat: no-repeat, no-repeat;
@@ -2789,11 +2799,12 @@ body.index #main {
 
 #cta {
 	background-attachment: scroll, scroll, scroll, scroll, fixed;
-	background-image: 
+	background-image:
 		url("images/light-tl.svg"),
 		url("images/light-tr.svg"),
 		url("images/overlay.png"),
-		linear-gradient(rgba(244, 140, 165, 0.95), rgba(244, 140, 165, 0.95)), /* slightly deeper pink */
+		linear-gradient(rgba(244, 140, 165, 0.95), rgba(244, 140, 165, 0.95)),
+		/* slightly deeper pink */
 		url("../../images/banner.jpg");
 	background-position: top left, top right, top left, bottom center, bottom center;
 	background-repeat: no-repeat, no-repeat, repeat, no-repeat, no-repeat;
